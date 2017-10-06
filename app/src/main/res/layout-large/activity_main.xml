@@ -12,6 +12,21 @@
         android:id="@+id/list_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="2"
         class="com.xemss.workout.WorkoutListFragment"/>
 
+    <!--todo use FrameLayout-->
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <!--<fragment-->
+        <!--android:id="@+id/detail_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--class="com.xemss.workout.WorkoutDetailFragment"/>-->
 </LinearLayout>

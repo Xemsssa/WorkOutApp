@@ -13,6 +13,10 @@ public class WorkoutDetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            workoutId = savedInstanceState.getLong("workoutId");
+        }
+
         return inflater.inflate(R.layout.fragment_workout_detail, container, false);
     }
 
@@ -35,5 +39,11 @@ public class WorkoutDetailFragment extends Fragment {
 
     public void setWorkoutId(long workoutId) {
         this.workoutId = workoutId;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+//        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putLong("workoutId", workoutId);
     }
 }
