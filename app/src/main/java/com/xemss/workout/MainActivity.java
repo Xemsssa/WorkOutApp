@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
             // TODO: 06.10.2017 Get access to operate with fragment
             FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
-            // TODO: 06.10.2017 get needed detaill
+            // TODO: 06.10.2017 get needed detail
             workoutDetailFragment.setWorkoutId(id);
 
 //      // TODO: 06.10.2017 replace default layout with detail of selected item
